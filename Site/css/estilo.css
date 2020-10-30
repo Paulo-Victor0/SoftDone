@@ -1,0 +1,231 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* MENU DE NAVEGAÇÃO */
+nav.menu {
+	margin-top: -70px;
+	background: #03022c;
+	height: 65px;
+	width: 100%;
+	position: fixed;
+}
+#logo {
+	color: lightskyblue;
+	font-size: 35px;
+	line-height: 65px;
+	padding: 0 20px;
+}
+.menu ul {
+	float: right;
+	margin-right: 20px;
+}
+.menu li {
+	display: inline-block;
+	line-height: 65px;
+	margin: 0 5px;
+}
+.menu a {
+	color: white;
+	font-size: 20px;
+	padding: 7px 13px;
+	border-radius: 3px;
+}
+.menu a:hover {
+		color: lightskyblue;
+		transition: .5s;
+	}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 65px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	.menu a{
+		font-size: 20px;
+	}
+}
+@media (max-width: 877px){
+	.checkbtn {
+		display: block;
+	}
+	.menu ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #040268;
+		top: 65px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	.menu li{
+		display: block;
+		margin: 70px 0;
+		line-height: 30px;
+	}
+	.menu a {
+		font-size: 25px;
+	}
+	#logo{
+		font-size: 30px;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+/* FIM DO MENU DE NAVEGAÇÃO */
+.conteudo{
+	margin-top: 70px;
+	margin-right: 20px;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+.conteudo h1{
+	margin-bottom: 5px;
+	font-size: 30px;
+	color: #4161e1;
+}
+.conteudo p {
+	text-align: justify;
+}
+
+/* PRODUTOS.HTML */
+.formularios{
+	margin-top: 70px;
+	margin-right: 20px;
+	margin-bottom: 0;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.formularios h1{
+	margin-bottom: 5px;
+	font-size: 30px;
+	color: #4161e1;
+}
+.formularios p {
+	text-align: justify;
+}
+span{
+    color: #4161e1;
+}
+span.SO{
+    font-size: 30px;
+}
+.formularios form{
+    border: 1px solid #606060;
+    background-color: rgba(220, 220, 220,.5);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    bottom:-50px;
+    margin-top: 20px;
+	margin-bottom: 20px;
+	align-self: center;
+}
+.formularios form h2{
+    text-align: center;
+    color:#4169e1;
+    
+}
+.formularios form label{
+	margin: 5px 8px 15px 8px;
+	display: inline-block;
+	font-size: 20px;
+	color:rgba(0, 0, 0,.9);
+	cursor: pointer;
+}
+.formularios form .label1{
+	margin-left: 85px;
+}
+.formularios form .labeleCheckbox{
+	border: none;
+}
+.formularios form input[type=text],
+.formularios form input[type=email],
+.formularios form input[type=password]{
+    width: 100%;
+    height: 45px;
+    border:1px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin: 10px 0px;
+    outline: none;
+}
+.formularios form input[type=submit]{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background: dodgerblue;
+    color: white;
+    border: 0px;
+	border-radius: 20px;
+	margin-top: 7px;
+}
+.formularios form input[type=submit]:hover{
+    background-color:#4169E1 ;
+    top: 10px;
+    transition: 0.5s;
+    outline: none;
+
+}
+/* BOTAO DOWNLOAD E FEEDBACK */
+.divBotoes{
+	display: flex;
+	justify-content: center;
+}
+.botao{
+    font: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0px;
+    background: dodgerblue;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 0px 0px rgb(135, 206, 250);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    outline: none;
+}        
+.botao:hover{
+    background: #4169e1;
+    transition: 1s;
+}
+.botao:active{
+    box-shadow: 0px 0px 0px 0px rgb(135, 206, 250), inset 3px 3px 3px #4169e1;
+	transform: translate(10px, 10px);
+	transition: .5s;
+}
+/* FIM BOTAO DOWNLOAD E FEEDBACK */
+
+/* FEEDABACK.HTML */
+.feedbackform textarea{
+	display: flex;
+	outline: none;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 60%;
+}
+.feedbackform h2{
+	padding-bottom: 15px;
+}

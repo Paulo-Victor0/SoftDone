@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftDone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a id="logo" href="index.html"><strong>SoftDone</strong></a>
+            <ul>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="formularios">
+        <form method="post" >
+            <h2>Informe as especificações do seu Computador</h2>
+            <input type="text" id="processadorP" name="processador" placeholder="Processador" required="required">
+            <input type="text" id="memoriaP" name="memoria ram" placeholder="Quantidade de Memoria Ram" required="required">
+            <input type="text" id="placaVideoC" name="placa de video" placeholder="Placa de Video" >
+            <h2>Uso do Sistema Operacional</h2> 
+            
+            <fieldset class="labeleCheckbox">
+                <label class="label1" for="checkboxCasual">Casual</label> 
+                    <input type="checkbox" name="casual" id="checkboxCasual">
+                <label for="checkboxTrabalho">Trabalho</label> 
+                    <input type="checkbox" name="trabalho" id="checkboxTrabalho">
+                <label for="checkboxJogos">Jogos</label> 
+                    <input type="checkbox" name="jogos" id="checkboxJogos">
+
+            </fieldset>
+            <input type="submit" name="enviarEspecificacoes" value="Enviar"/>
+        </form> 
+
+        <div class="divBotoes">
+            <a href="#"><button class="botao">Download</button></a> <!--/* só falta o href + target="blank"*/ -->
+            <a href="Feedback.html" target="blank"><button class="botao">FeedBack</button></a>
+        </div> <!--/* só falta o href + target="blank"*/ -->
+    </div>    
+</body>
+</html>
