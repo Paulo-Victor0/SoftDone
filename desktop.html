@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftDone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="imagens/softdone_icone.png">
+</head>
+<body>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html"><img id="softdone_img" src="imagens/softdone_menu.jpg" /></a>
+            <ul>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIM DO MENU DE NAVEGAÇÃO -->
+    <div class="formularios">
+        <form method="post">
+            <h2>Informe as especificações do seu Computador</h2>
+            <input type="text" id="processadorP" name="processador" placeholder="Processador" required="required">
+            
+            <input id="pr" list="memoria" maxlength="10" size="40" placeholder="Quantidade de memória RAM" required="required"><br/>
+                <datalist id="memoria">
+                    <select>
+                        <option value="1GB"></option>
+                        <option value="2GB"></option>
+                        <option value="3GB"></option>
+                        <option value="4GB"></option>
+                        <option value="6GB"></option>
+                        <option value="8GB"></option>
+                        <option value="+8GB"></option>
+                    </select>
+                </datalist>
+            <input id="pr" list="placadevideo" maxlength="10" size="40" placeholder="Placa de vídeo" required="required"><br/>
+                <datalist id="placadevideo">
+                    <select>
+                        <option value="Não tem"></option>
+                        <option value="-1GB"></option>
+                        <option value="1GB"></option>
+                        <option value="2GB"></option>
+                        <option value="+2GB"></option>
+                    </select>
+                </datalist>
+            <h3>Qual a finalidade do sistema operacional?</h3> 
+            
+            <fieldset class="labeleCheckbox">
+                <label class="label1" for="checkboxTrabalho">Trabalho</label> 
+                    <input type="checkbox" name="trabalho" id="checkboxTrabalho">
+                <label for="checkboxJogos">Jogos</label> 
+                    <input type="checkbox" name="jogos" id="checkboxJogos">
+                <label for="checkboxInternet">Internet</label> 
+                    <input type="checkbox" name="internet" id="checkboxInternet">
+            </fieldset>
+            <input type="submit" name="enviarEspecificacoes" value="Enviar"/>
+        </form> 
+
+        <div class="divBotoes">
+            <a href="#"><button class="botao">Download</button></a> <!--/* só falta o href + target="blank"*/ -->
+            <a href="Feedback.html" target="blank"><button class="botao">FeedBack</button></a>
+        </div> <!--/* só falta o href + target="blank"*/ -->
+    </div>
+    <footer class="footer">
+		empresasoftdone@comercial.com
+	</footer>
+</body>
+</html>

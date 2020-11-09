@@ -6,48 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="imagens/softdone_icone.png">
 </head>
 <body>
+    <!-- MENU DE NAVEGAÇÃO -->
     <header class="cabecalho">
         <nav class="menu">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a id="logo" href="index.html"><strong>SoftDone</strong></a>
+            <a href="index.html"><img id="softdone_img" src="imagens/softdone_menu.jpg" /></a>
             <ul>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="#">Contato</a></li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="formularios">
-        <form method="post" >
-            <h2>Informe as especificações do seu Computador</h2>
-            <input type="text" id="processadorP" name="processador" placeholder="Processador" required="required">
-            <input type="text" id="memoriaP" name="memoria ram" placeholder="Quantidade de Memoria Ram" required="required">
-            <input type="text" id="placaVideoC" name="placa de video" placeholder="Placa de Video" >
-            <h2>Uso do Sistema Operacional</h2> 
-            
-            <fieldset class="labeleCheckbox">
-                <label class="label1" for="checkboxCasual">Casual</label> 
-                    <input type="checkbox" name="casual" id="checkboxCasual">
-                <label for="checkboxTrabalho">Trabalho</label> 
-                    <input type="checkbox" name="trabalho" id="checkboxTrabalho">
-                <label for="checkboxJogos">Jogos</label> 
-                    <input type="checkbox" name="jogos" id="checkboxJogos">
-
-            </fieldset>
-            <input type="submit" name="enviarEspecificacoes" value="Enviar"/>
-        </form> 
-
-        <div class="divBotoes">
-            <a href="#"><button class="botao">Download</button></a> <!--/* só falta o href + target="blank"*/ -->
-            <a href="Feedback.html" target="blank"><button class="botao">FeedBack</button></a>
-        </div> <!--/* só falta o href + target="blank"*/ -->
-    </div>    
+    <!-- FIM DO MENU DE NAVEGAÇÃO -->
+    <h1 class="h1_produtos">ESCOLHA O TIPO DO PRODUTO</h1>
+    <div class="produtos_geral">
+        <section id="esquerda">
+            <a href="desktop.html"><button class="botao" id="txtsection">DESKTOP</button></a></br></br>
+            <a id="txtsection">Trabalho de escritório, jogos, assistir filmes</a>
+        </section>
+        <section id="direita">
+            <a href="servidor.html"><button class="botao" id="txtsection">SERVIDOR</button></a></br></br>
+            <a id="txtsection">Banco de dados, impressão, arquivos, etc..</a>
+        </section>
+    </div>
+    <footer class="footer cadastro">
+		empresasoftdone@comercial.com
+    </footer>
 </body>
 </html>

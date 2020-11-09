@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>SoftDone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="imagens/softdone_icone.png">
 </head>
 <body>
     <!-- MENU DE NAVEGAÇÃO -->
@@ -15,23 +16,24 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a id="logo" href="index.html"><strong>SoftDone</strong></a>
+            <a href="index.html"><img id="softdone_img" src="imagens/softdone_menu.jpg" /></a>
             <ul>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="#">Contato</a></li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
 	<!-- FIM DO MENU DE NAVEGAÇÃO -->
-
     <div class="formularios">
         <form method="post" class="feedbackform">
-            <h2>Diga o que achou do *NOME DO SISTEMA*</h2>
+            <h2>Diga o que achou do</br> *NOME DO SISTEMA*</h2>
                 <textarea name="feedback" id="textoFeedback" cols="20" rows="10"></textarea>
             <input type="submit" name="enviarFeedback" value="Enviar">
         </form>
-    </div>    
+    </div>
+    <footer class="footer feedback">
+		empresasoftdone@comercial.com
+	</footer>
 </body>    
 </html>
