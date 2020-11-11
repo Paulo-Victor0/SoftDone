@@ -101,6 +101,9 @@ nav.menu {
 	#check:checked ~ ul {
 		left: 0;
 	}
+	.video_apresentacao iframe{
+		width: 300px; height: 200px;
+	}
 }
 /* FIM DO MENU DE NAVEGAÇÃO */
 .conteudo{
