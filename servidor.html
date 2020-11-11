@@ -53,14 +53,23 @@
                 </datalist>
             <h3>Qual a finalidade do sistema operacional?</h3> 
             
-            <fieldset class="labeleCheckbox">
-                <label class="label2" for="checkboxBDados">Banco de Dados</label> 
-                    <input type="checkbox" name="bancodedados" id="checkboxBDados">
-                <label for="checkboxImpressao">Impressão</label> 
-                    <input type="checkbox" name="impressao" id="checkboxImpressao">
-                <label for="checkboxArquivos">Arquivos</label> 
-                    <input type="checkbox" name="arquivos" id="checkboxArquivos">
-            </fieldset>
+            <div class="checkbox">
+
+                <div class="checkboxDentro">
+                    <label for="checkboxBDados">Banco de Dados</label> 
+                        <input type="checkbox" name="bancodedados" id="checkboxBDados">
+                    </div> 
+                    
+                <div class=" checkboxDentro">
+                    <label for="checkboxImpressao">Impressão</label>
+                        <input type="checkbox" name="impressao" id="checkboxImpressao">
+                </div>
+                    
+                <div class="checkboxDentro">
+                    <label for="checkboxArquivos">Arquivos</label> 
+                        <input type="checkbox" name="arquivos" id="checkboxArquivos">
+                </div>
+            </div>
             <input type="submit" name="enviarEspecificacoes" value="Enviar"/>
         </form> 
 

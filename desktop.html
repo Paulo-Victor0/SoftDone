@@ -54,14 +54,23 @@
                 </datalist>
             <h3>Qual a finalidade do sistema operacional?</h3> 
             
-            <fieldset class="labeleCheckbox">
-                <label class="label1" for="checkboxTrabalho">Trabalho</label> 
-                    <input type="checkbox" name="trabalho" id="checkboxTrabalho">
-                <label for="checkboxJogos">Jogos</label> 
-                    <input type="checkbox" name="jogos" id="checkboxJogos">
-                <label for="checkboxInternet">Internet</label> 
-                    <input type="checkbox" name="internet" id="checkboxInternet">
-            </fieldset>
+            <div class="checkbox">
+
+                <div class="checkboxDentro">
+                    <label for="checkboxTrabalho">Trabalho</label> 
+                        <input type="checkbox" name="trabalho" id="checkboxTrabalho">
+                </div>
+
+                <div class="checkboxDentro">
+                    <label for="checkboxJogos">Jogos</label> 
+                        <input type="checkbox" name="jogos" id="checkboxJogos">
+                </div>
+
+                <div class="checkboxDentro">
+                    <label for="checkboxInternet">Internet</label> 
+                        <input type="checkbox" name="internet" id="checkboxInternet">
+                </div>
+            </div>
             <input type="submit" name="enviarEspecificacoes" value="Enviar"/>
         </form> 
 
