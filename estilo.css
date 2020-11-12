@@ -172,20 +172,6 @@ nav.menu {
 	flex-direction: column;
 	justify-content: center;
 }
-.formularios h1{
-	margin-bottom: 5px;
-	font-size: 30px;
-	color: #4161e1;
-}
-.formularios p {
-	text-align: justify;
-}
-span{
-    color: #4161e1;
-}
-span.SO{
-    font-size: 30px;
-}
 .formularios form{
     border: 1px solid #606060;
     background-color: rgba(220, 220, 220,.5);
@@ -203,12 +189,6 @@ span.SO{
     color:#4169e1;
     
 }
-.formularios form h3{
-	text-align: center;
-	font-size: 22px;
-    color:#4169e1;
-    
-}
 .formularios form label{
 	margin: 5px 8px 15px 8px;
 	display: inline-block;
@@ -220,19 +200,6 @@ span.SO{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-}
-.checkDentro{
-}
-.formularios form input[type=text],
-.formularios form input[type=email],
-.formularios form input[type=password]{
-    width: 100%;
-    height: 45px;
-    border:1px solid black;
-    border-radius: 20px;
-    padding-left: 10px;
-    margin: 10px 0px;
-    outline: none;
 }
 .formularios form input[type=submit]{
     width: 100%;
@@ -250,16 +217,6 @@ span.SO{
     transition: 0.5s;
     outline: none;
 }
-#pr {
-	width: 100%;
-    height: 45px;
-    border:1px solid black;
-    border-radius: 20px;
-    padding-left: 10px;
-    margin: 10px 0px;
-	outline: none;
-}
-
 .h1_produtos {
 	margin-top: 70px;
 	text-align: center;
@@ -303,7 +260,7 @@ span.SO{
 	font-size: 20px;
 }
 
-/* BOTAO DOWNLOAD E FEEDBACK */
+/* BOTAO DESKTOP E SERVIDOR */
 .divBotoes{
 	display: flex;
 	justify-content: center;
@@ -331,7 +288,7 @@ span.SO{
 	transform: translate(10px, 10px);
 	transition: .5s;
 }
-/* FIM BOTAO DOWNLOAD E FEEDBACK */
+/* FIM BOTAO DESKTOP E SERVIDOR  */
 
 /* FEEDABACK.HTML */
 .feedbackform textarea{
