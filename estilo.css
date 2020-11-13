@@ -162,7 +162,7 @@ nav.menu {
 	width: 45%;
 }
 
-/* PRODUTOS.HTML */
+/* SERVICOS.HTML */
 .formularios{
 	margin-top: 70px;
 	margin-right: 20px;
@@ -189,18 +189,6 @@ nav.menu {
     color:#4169e1;
     
 }
-.formularios form label{
-	margin: 5px 8px 15px 8px;
-	display: inline-block;
-	font-size: 20px;
-	color:rgba(0, 0, 0,.9);
-	cursor: pointer;
-}
-.checkbox{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
 .formularios form input[type=submit]{
     width: 100%;
     height: 30px;
@@ -217,12 +205,12 @@ nav.menu {
     transition: 0.5s;
     outline: none;
 }
-.h1_produtos {
+.h1_servicos {
 	margin-top: 70px;
 	text-align: center;
 }
 
-.produtos_geral {
+.servicos_geral {
 	text-shadow: 0px 0px 5px #000;
 	margin-top: 5px;
 	text-align:center;
@@ -230,7 +218,7 @@ nav.menu {
 	align-self: center;
 }
 
-.esquerda {
+.desktop {
 	padding-top: 100px;
 	border: 1px solid white;
 	width: 250px;
@@ -242,7 +230,7 @@ nav.menu {
 	margin-right: 10px;
 }
 
-.direita {
+.servidor {
 	padding-top: 100px;
 	border: 1px solid white;
 	border-radius: 5px;
@@ -254,7 +242,7 @@ nav.menu {
 	margin-left: 10px;
 }
 
-.txtprodutos {
+.txtservicos {
 	text-decoration: none;
 	color:#FFFFFF;
 	font-size: 20px;
